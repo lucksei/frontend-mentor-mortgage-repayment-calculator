@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/lucksei/frontend-mentor-mortgage-repayment-calculator)
+- Live Site URL: [Github pages](https://lucksei.github.io/frontend-mentor-mortgage-repayment-calculator/)
 
 ## My process
 
@@ -55,6 +55,8 @@ One major issue I faced was handling the checkboxes. Thankfully, I got it workin
 Ignore the messy JS—though I considered refactoring the project, I’m more focused on learning than making it perfect, so I decided not to (just an excuse for my laziness...). As a result, the interactions might be somewhat buggy. Sorry about that.
 
 Overall, this was a fun project to practice in my free time.
+
+> PS. The code for the mortgage calculator was jsut a copy paste from ChatGPT since i was to tired/lazy to check how to make it myself, also my bad...
 
 ### Continued Development
 
