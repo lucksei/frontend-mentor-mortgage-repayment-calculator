@@ -12,7 +12,7 @@ html {
 /* Frontend Mentor attribution */
 
 .attribution { 
-
+    position: fixed; bottom: 0;
     font-size: 11px; text-align: center; 
 }
 .attribution a {
