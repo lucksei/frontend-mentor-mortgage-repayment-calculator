@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google fonts Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="container calculator-container">
+      <h1>Mortgage Calculator</h1>
+      <a href="#" data-action="clear-all">Clear All</a>
+
+      <form action="#" onsubmit="return checkForm(event)">
+        <div class="input-1">
+          <p>Mortgage Amount</p>
+          <div class="input-group">
+            <span class="input-group-start">£</span>
+            <input class="input-group-end" type="text" name="mortgage-amount" id="mortgage-amount-input">
+          </div>
+          <p class="error-text" data-error="mortgage-amount"></p>
+        </div>
+
+        <div class="input-2">
+          <p>Mortgage Term</p>
+          <div class="input-group">
+            <input class="input-group-start" type="text" name="mortgage-term" id="mortgage-term-input">
+            <span class="input-group-end">years</span>
+          </div>
+          <p class="error-text" data-error="mortgage-term"></p>
+        </div>
+
+        <div class="input-3">
+          <p>Interest Rate</p>
+          <div class="input-group">
+            <input class="input-group-start" type="text" name="interest-rate" id="interest-rate-input">
+            <span class="input-group-end">%</span>
+          </div>
+          <p class="error-text" data-error="interest-rate"></p>
+        </div>
+
+        <div class="input-4">
+          <p>Mortgage Type</p>
+          <label class="radio">
+            <input type="radio" name="mortgage-type" value="repayment" id="repayment-radio" checked>
+            <span>Repayment</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="mortgage-type" value="interest-only" id="interest-only-radio">
+            <span>Interest Only</span>
+          </label>
+        </div>
+
+        <button class="btn" type="submit" data-action="calculate">
+          <img src="./assets/images/icon-calculator.svg" alt="icon-calculator">
+          <p>Calculate Repayments</p>
+        </button>
+      </form>
+    </div>
+    <div class="container results-container">
+      <div class="empty-results">
+        <!-- Empty results start -->
+
+        <img src="./assets/images/illustration-empty.svg" alt="illustration-empty">
+        <h1>Results shown here</h1>
+
+        <p>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</p>
+
+        <!-- Empty results end -->
+      </div>
+      <div class="completed-results hidden">
+        <!-- Completed results start -->
+
+        <h1>Your results</h1>
+
+        <p>Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+        <div class="results-card">
+          <p>Your monthly repayments</p>
+          <p class="monthly-value"><span>£</span><span class="monthly-result">NaN</span></p>
+
+          <hr>
+
+          <p>Total you'll repay over the term</p>
+          <p class="total-value"><span>£</span><span class="total-result">NaN</span></p>
+        </div>
+
+        <!-- Completed results end -->
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <!-- Include some Javascript -->
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
